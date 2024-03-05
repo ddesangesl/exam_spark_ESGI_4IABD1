@@ -1,7 +1,6 @@
 import pyspark.sql.functions as F
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType
-import time
 
 spark = SparkSession.builder.appName("exo4_python").master("local[*]").getOrCreate()
 
