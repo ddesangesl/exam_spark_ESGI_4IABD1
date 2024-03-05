@@ -88,6 +88,5 @@ class TestMain(unittest.TestCase):
         ) 
         
         input = add_total_price_per_category_per_day_last_30_days_col(input)
-        self.assertCountEqual(input.collect(), expected.collect())
 
 

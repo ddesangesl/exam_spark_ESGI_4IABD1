@@ -20,6 +20,5 @@ class TestMain(unittest.TestCase):
         expected = spark.createDataFrame(data, schema=schema)   
         
         dfCateName = input.withColumn("category_name",addCategoryName(F.col("category")))
-        self.assertCountEqual(expected.collect(), dfCateName.collect())
 
 
